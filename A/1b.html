@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assessment 1b</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f2f2f2;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.section-title{
+    font-weight:700;
+    font-size:34px;
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.cards-wrapper{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* Different widths like image */
+.card-small{
+    width:200px;
+}
+
+.card-medium{
+    width:290px;
+}
+
+.card-large{
+    width:400px;
+}
+
+.card-custom{
+    position:relative;
+    height:320px;
+    border-radius:18px;
+    overflow:hidden;
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.card-content{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:2;
+}
+
+.card-content img{
+    max-width:150px;
+    filter:brightness(0) invert(1);
+}
+
+.play-btn{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    width:55px;
+    height:55px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:3;
+    box-shadow:0 4px 12px rgba(0,0,0,.4);
+    font-size:18px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container py-5">
+
+    <h1 class="section-title">
+        The most innovative companies run </br>their business in Slack.
+    </h1>
+
+    <div class="cards-wrapper">
+
+        <!-- Small -->
+        <div class="card-custom card-small" style="background-image:url('https://picsum.photos/600/400?1')">
+            <div class="overlay"></div>
+            <div class="card-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg">
+            </div>
+            <div class="play-btn">▶</div>
+        </div>
+
+        <!-- Medium -->
+        <div class="card-custom card-medium" style="background-image:url('https://picsum.photos/600/400?2')">
+            <div class="overlay"></div>
+            <div class="card-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg">
+            </div>
+        </div>
+
+        <!-- Large -->
+        <div class="card-custom card-large" style="background-image:url('https://picsum.photos/600/400?3')">
+            <div class="overlay"></div>
+            <div class="card-content">
+                <img src="C:\Users\Student_04\Documents\ib kavi\Assessment\A\images\B\ezcater.png">
+            </div>
+        </div>
+
+        <!-- Small -->
+        <div class="card-custom card-small" style="background-image:url('https://picsum.photos/600/400?4')">
+            <div class="overlay"></div>
+            <div class="card-content">
+                <img src="C:\Users\Student_04\Documents\ib kavi\Assessment\A\images\B\ari2w.png" style="width:90px;">
+                <h2 style="color:white;">ARI</h2>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
